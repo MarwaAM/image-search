@@ -1,5 +1,0 @@
-<h1>Welcome to Image Search</h1>
-<input class="search-box" type="text" placeholder="search for photos" #filter (keyup.enter)="onSearch(filter.value)" />
-<div class="imgs">
-    <app-images *ngFor="let imageData of imagesData" [imageData]="imageData"></app-images>
-</div>
