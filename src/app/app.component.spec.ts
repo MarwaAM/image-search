@@ -1,10 +1,19 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { importProvidersFrom } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+          declarations: [
+            AppComponent,
+            HomeComponent,
+          ],
+          providers: [
+            importProvidersFrom(HttpClientModule),
+          ]
     }).compileComponents();
   });
 
@@ -24,6 +33,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, image-search');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Welcome to Image Search');
   });
 });
