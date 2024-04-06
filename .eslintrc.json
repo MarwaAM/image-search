@@ -1,0 +1,130 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2022": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@angular-eslint/eslint-plugin",
+    "@typescript-eslint",
+    "jsdoc",
+    "simple-import-sort",
+    "unused-imports"
+  ],
+  "rules": {
+    "@angular-eslint/component-class-suffix": "error",
+    "@angular-eslint/component-selector": [
+      "error",
+      {
+        "type": "element",
+        "prefix": "app",
+        "style": "kebab-case"
+      }
+    ],
+    "@angular-eslint/directive-class-suffix": "error",
+    "@angular-eslint/directive-selector": [
+      "error",
+      {
+        "type": "attribute",
+        "prefix": "app",
+        "style": "camelCase"
+      }
+    ],
+    "@angular-eslint/no-inputs-metadata-property": "error",
+    "@angular-eslint/no-output-rename": "error",
+    "@angular-eslint/no-outputs-metadata-property": "error",
+    "@angular-eslint/use-lifecycle-interface": "error",
+    "@angular-eslint/use-pipe-transform-interface": "error",
+    "@typescript-eslint/no-non-null-assertion": "error",
+    "@typescript-eslint/adjacent-overload-signatures": "error",
+    "@typescript-eslint/consistent-type-definitions": "error",
+    "@typescript-eslint/dot-notation": "off",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": [
+          "class",
+          "interface"
+        ],
+        "format": [
+          "PascalCase"
+        ]
+      }
+    ],
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "semi",
+          "requireLast": true
+        },
+        "singleline": {
+          "delimiter": "semi"
+        }
+      }
+    ],
+    "@typescript-eslint/no-misused-new": "error",
+    "@typescript-eslint/no-require-imports": "error",
+    "@typescript-eslint/no-shadow": [
+      "error",
+      {
+        "hoist": "all"
+      }
+    ],
+    "@typescript-eslint/prefer-function-type": "error",
+    "@typescript-eslint/type-annotation-spacing": "error",
+    "@typescript-eslint/unified-signatures": "error",
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "constructor-super": "error",
+    "curly": "error",
+    "eol-last": "error",
+    "eqeqeq": "error",
+    "no-lonely-if": "error",
+    "no-multi-assign": "error",
+    "no-multiple-empty-lines": "error",
+    "no-new-wrappers": "error",
+    "no-prototype-builtins": "error",
+    "no-return-await": "error",
+    "no-sequences": "error",
+    "no-template-curly-in-string": "error",
+    "no-throw-literal": "error",
+    "no-trailing-spaces": "error",
+    "no-extra-semi": "error",
+    "no-undef-init": "error",
+    "no-underscore-dangle": "error",
+    "no-unneeded-ternary": [
+      "error",
+      {
+        "defaultAssignment": false
+      }
+    ],
+    "no-unsafe-finally": "error",
+    "no-unused-labels": "error",
+    "no-var": "error",
+    "object-shorthand": "error",
+    "simple-import-sort/imports": "error",
+    "jsdoc/check-alignment": "error",
+    "jsdoc/check-indentation": "error",
+    "space-unary-ops": "error",
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "markers": [
+          "/"
+        ]
+      }
+    ],
+    "unused-imports/no-unused-imports": "error",
+    "use-isnan": "error"
+  }
+}
