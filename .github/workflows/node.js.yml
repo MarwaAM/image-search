@@ -26,4 +26,4 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm run lint
-    - run: ng test --watch false --progress false --code-coverage
+    - run: npm run test:ci
